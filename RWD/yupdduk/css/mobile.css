@@ -1,0 +1,382 @@
+@media ( min-width: 320px ) and ( max-width: 1035px ){
+    .web{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    /* 헤더영역 */
+    .m_header{
+        width: 100%;
+        height: 60px;
+        border-top: 2px solid #de1f24;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        background: #fff;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 10;
+    }
+    .m_header h1{
+        width: 170px;
+        height: 30px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .m_header h1 a{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .m_header h1 a img{
+        width: 100%;
+        height: 100%;
+    }
+    .m_header .m_menu_btn{
+        width: 22px;
+        height: 18px;
+        position: absolute;
+        left: calc( 100% - 94% );
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .m_header .m_menu_btn img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* 사이드바 배경쉐도우 */
+    .dimmed{
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 15;
+        display: none;
+    }
+    /* .dimmed시 잠금처리 */
+    .scroll_lock{
+        overflow: hidden;
+        touch-action: none;
+    }
+    /* 사이드바 */
+    .m_sidebar{
+        width: 320px;
+        height: 100vh;
+        overflow-y: auto;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        z-index: 16;
+        background: #fff;
+    }
+    .m_sidebar .login{
+        width: 100%;
+        height: 154px;
+        padding: 45px 24px 20px 16px;
+        background: #df1d25;
+        color: #fff;
+    }
+    .m_sidebar .login .txtbox{
+        margin-bottom: 20px;
+    }
+    .m_sidebar .login .txtbox p{
+        font-size: 14px;
+        font-weight: 200;
+        margin-bottom: 5px;
+    }
+    .m_sidebar .login .txtbox h2{
+        font-size: 22px;
+        font-weight: 300;
+    }
+    .m_sidebar .login .txtbox h2 span{
+        font-weight: 600;
+    }
+    .m_sidebar .login ul.side_login{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .m_sidebar .login ul.side_login li a{
+        color: #fff;
+        font-size: 14px;
+        font-weight: 200;
+    }
+    .m_sidebar>ul.menu{
+        width: 100%;
+        padding: 20px 0 10px;
+        position: relative;
+    }
+    .m_sidebar>ul.cs{
+        width: 100%;
+        padding: 10px 0 50px;
+        position: relative;
+    }
+    .m_sidebar>ul.m_gnb::after{
+        content: "";
+        width: calc( 100% - 40px );
+        height: 1px;
+        background: #e1e1e1;
+        position: absolute;
+        left: 20px;
+        bottom: 0;
+    }
+    .m_sidebar>ul.m_gnb>li{
+        width: 100%;
+    }
+    .m_sidebar>ul.m_gnb>li>a{
+        display: block;
+        width: 100%;
+        height: 48px;
+        font-size: 18px;
+        color: #131313;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .m_sidebar>ul.m_gnb>li>a>img{
+        width: 20px;
+    }
+    .m_sidebar>ul.m_gnb>li>ul.depth2{
+        background: #f6f6f6;
+        padding: 16px 0;
+        text-indent: 40px;
+        display: none;
+    }
+    .m_sidebar>ul.m_gnb>li>ul.depth2>li{
+        width: 100%;
+        line-height: 46px;
+    }
+    .m_sidebar>ul.m_gnb>li>ul.depth2>li>a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: 17px;
+        color: #131313;
+    }
+    
+    .m_sidebar>ul.sns{
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .m_sidebar>ul.sns>li{
+        width: 40px;
+    }
+    .m_sidebar>ul.sns>li>a{
+        display: block;
+        width: 100%;
+    }
+    .m_sidebar>ul.sns>li>a>img{
+        width: 100%;
+    }
+
+    /* 탭바 */
+    .tab_wrap{
+        width: 100%;
+        height: 72px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 14;
+    }
+    .tab_wrap ul.tab_bar{
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        border-top: 1px solid #d8d8d8;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .tab_wrap ul.tab_bar li a img{
+        width: 24px;
+    }
+    .tab_wrap ul.tab_bar li a h3{
+        font-size: 12px;
+        font-weight: 600;
+        color: #131313;
+    }
+
+    /* 메인 */
+    .m_main{
+        width: 100%;
+    }
+    /* 메인슬라이드 */
+    .m_slide{
+        width: 100%;
+        margin-top: 60px;
+    }
+    .m_slide .slide_img{
+        width: 100%;
+    }
+    .m_slide .slide_img a{
+        display: block;
+        width: 100%;
+    }
+    .m_slide .slide_img a img{
+        width: 100%;
+    }
+    /* 메인멤버십영역_로그인 */
+    .m_member{
+        width: 100%;
+        padding: 24px;
+    }
+    .m_member h2{
+        font-size: 22px;
+        font-weight: 700;
+        color: #131313;
+        margin-bottom: 10px;
+    }
+    .m_member ul.m_login{
+        display: flex;
+        gap: 31px;
+    }
+    .m_member ul.m_login li{
+        position: relative;
+    }
+    .m_member ul.m_login li:first-child::after{
+        content: "";
+        width: 1px;
+        height: 10px;
+        background: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        right: -15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .m_member ul.m_login li a{
+        font-size: 18px;
+        color: #131313;
+    }
+    /* 하단배너 */
+    .m_banner{
+        width: 100%;
+    }
+    .m_banner img{
+        width: 100%;
+    }
+    /* 이벤트 */
+    .m_event{
+        width: 100%;
+        padding: 24px;
+    }
+    .m_event h2{
+        font-size: 22px;
+        font-weight: 700;
+        color: #131313;
+        margin-bottom: 10px;
+    }
+    .m_event .list{
+        width: 100%;
+    }
+    .m_event .list .list_img{
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .m_event .list .list1{
+        margin-bottom: 20px;
+    }
+    .m_event .list .list_img a{
+        display: block;
+        width: 100%;
+    }
+    .m_event .list .list_img a img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .m_event .more_btn{
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .m_event .more_btn a{
+        color: #666;
+        font-size: 15px;
+    }
+
+    /* 푸터 */
+    footer{
+        height: inherit;
+        display: inherit;
+        border-top: 1px solid #ccc;
+        position: relative;
+    }
+    footer h1{
+        width: 200px;
+        height: 43px;
+        margin-top: 40px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+    }
+    footer ul.award{
+        width: 96%;
+        padding: 10px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 112px;
+    }
+    footer ul.award li{
+        width: calc( 50% - 5px );
+        height: 80px;
+    }
+    footer ul.award li .txtbox{
+        width: calc( 100% - 40px );
+    }
+    footer ul.award li .txtbox p{
+        font-size: 12px;
+        font-weight: 400;
+        word-break: auto-phrase;
+    }
+    footer ul.award li .txtbox p span{
+        font-size: 11px;
+    }
+    footer .ft_nav{
+        width: inherit;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 322px;
+    }
+    footer .ft_nav ul.ft_gnb{
+        justify-content: center;
+        gap: 8px;
+    }
+    footer .ft_nav ul.ft_gnb li a{
+        font-size: 11px;
+    }
+    footer .ft_nav address{
+        font-size: 11px;
+        font-weight: 300;
+        color: #999;
+        text-align: center;
+        margin: 18px 0;
+    }
+    footer .ft_nav address .br{
+        display: block;
+    }
+    footer .ft_nav address span{
+        font-weight: 400;
+    }
+    footer .ft_nav p{
+        text-align: center;
+        font-size: 11px;
+        color: #999;
+        padding-bottom: 94px;
+    }
+}
