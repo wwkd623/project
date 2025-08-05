@@ -46,7 +46,7 @@ $(function(){
             opacity: 1
         })
         $(".header_wrap").stop().animate({height: 420},300);
-        $("ul.depth2").stop().fadeIn(400);
+        $("ul.depth2").stop().fadeIn();
     });
     $(".header_wrap").mouseleave(function(){
         $("nav .gnb_line").css({opacity: 0});
