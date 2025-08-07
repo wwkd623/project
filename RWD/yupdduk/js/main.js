@@ -3,6 +3,9 @@ $(function(){
     $(".slide").slick({
         autoplay: true,
         infinite: true,
+        pauseOnFocus: false, // 포커스해도 멈추지 않게
+        pauseOnHover: false, // 마우스 올려도 멈추지 않게
+        pauseOnDotsHover: false, // 도트 위에 올려도 멈추지 않게
         slidesToShow: 1,
         arrows: false
     });
@@ -10,6 +13,9 @@ $(function(){
     $(".m_slide").slick({
         autoplay: true,
         infinite: true,
+        pauseOnFocus: false, // 포커스해도 멈추지 않게
+        pauseOnHover: false, // 마우스 올려도 멈추지 않게
+        pauseOnDotsHover: false, // 도트 위에 올려도 멈추지 않게
         slidesToShow: 1,
         arrows: false
     });
@@ -71,7 +77,7 @@ $(function(){
         autoplaySpeed: 5000,
         arrows: false,
         asNavFor: '.slider-for',
-        focusOnSelect: false,
+        focusOnSelect: true,
         infinite: true
     });
       
