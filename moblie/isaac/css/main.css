@@ -206,9 +206,11 @@ ul.tab_bar li:nth-child(3){
     background: #ff281e;
     border-radius: 100%;
     margin-top: -30px;
+    overflow: hidden;
 }
 ul.tab_bar li:nth-child(3) a{
     color: #fff;
+    margin-top: -4px;
 }
 ul.tab_bar li a{
     display: block;
@@ -233,11 +235,10 @@ ul.tab_bar li:nth-child(2) a .icon{
     background-size: cover;
 }
 ul.tab_bar li:nth-child(3) a .icon{
-    margin-top: 12px;
     width: 28px;
-    height: 28px;
-    background: url("../images/icons_tab_check.png") no-repeat;
-    background-size: cover;
+    height: 40px;
+    background: url("../images/icons_tab_check.png") no-repeat center bottom;
+    background-size: 28px 28px;
 }
 ul.tab_bar li:nth-child(4) a .icon{
     background: url("../images/icons_tab_chart.png") no-repeat;
