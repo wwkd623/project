@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subway mobile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- 백그라운드커버 -->
+    <div class="cover"></div>
+    <!-- 팝업창 -->
+    <div class="popup">
+        <a href="#">
+            <img src="./images/popup.png" alt="팝업창">
+            <div class="close">
+                <form action="">
+                    <div class="formcheck">
+                        <input type="checkbox" id="today_close">
+                        <label for="today_close">오늘 하루 그만보기</label>
+                    </div>
+                    <a href="#" class="txt_btn">X 닫기</a>
+                </form>
+            </div>
+        </a>
+    </div>
+
+
+    <!-- 모바일메뉴 -->
+    <div class="m_side_wrap">
+        <!-- 로그인메뉴 -->
+        <div class="m_login">
+            <div class="m_header">
+                <h1><a href="index.html">서브웨이모바일로고</a></h1>
+                <ul>
+                    <li><a href="#">설정버튼</a></li>
+                    <li class="m_close"><a href="#">닫기버튼</a></li>
+                </ul>
+            </div>
+            <p>로그인 해주세요<br>아직 회원이 아니신가요?</p>
+            <ul class="login_btn">
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="login.html">회원가입</a></li>
+            </ul>
+            <button class="nomember">비회원 주문조회</button>
+        </div>
+        <!-- 퀵메뉴 -->
+        <div class="quick_menu">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/quick_01_fast.png" alt="퀵">
+                        <h4>FAST-SUB</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/quick_02_home.png" alt="퀵">
+                        <h4>HOME-SUB</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/quick_03_group.png" alt="퀵">
+                        <h4>단체주문</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/quick_04_subcard.png" alt="퀵">
+                        <h4>써브카드</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/quick_06_coupon.png" alt="퀵">
+                        <h4>쿠폰</h4>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/quick_05_gift.png" alt="퀵">
+                        <h4>e-Gift</h4>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 아코디언 메뉴 -->
+        <div class="m_gnb">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/icon_app_gnb_menu.png" alt="gnb아이콘">
+                        <h3>메뉴소개</h3>
+                    </a>
+                    <ul class="depth2">
+                        <li><a href="#">샌드위치</a></li>
+                        <li><a href="#">랩 · 기타</a></li>
+                        <li><a href="#">샐러드</a></li>
+                        <li><a href="#">아침메뉴</a></li>
+                        <li><a href="#">스마일 썹</a></li>
+                        <li><a href="#">단체메뉴</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/icon_app_gnb_howto.png" alt="gnb아이콘">
+                        <h3>이용방법</h3>
+                    </a>
+                    <ul class="depth2">
+                        <li><a href="#">써브웨이 이용방법</a></li>
+                        <li><a href="#">단체메뉴 이용방법</a></li>
+                        <li><a href="#">신선한 재료 소개</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/icon_app_gnb_news.png" alt="gnb아이콘">
+                        <h3>새소식</h3>
+                    </a>
+                    <ul class="depth2">
+                        <li><a href="#">이벤트 · 프로모션</a></li>
+                        <li><a href="#">뉴스 · 공지사항</a></li>
+                        <li><a href="#">광고영상</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/icon_app_gnb_subway.png" alt="gnb아이콘">
+                        <h3>써브웨이</h3>
+                    </a>
+                    <ul class="depth2">
+                        <li><a href="#">써브웨이 역사</a></li>
+                        <li><a href="#">써브웨이 약속</a></li>
+                        <li><a href="#">매장찾기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/icon_app_gnb_store.png" alt="gnb아이콘">
+                        <h3>가맹점</h3>
+                    </a>
+                    <ul class="depth2">
+                        <li><a href="#">써브웨이 프렌차이즈</a></li>
+                        <li><a href="#">가맹관련 FAQ</a></li>
+                        <li><a href="#">자사안내</a></li>
+                        <li><a href="#">사업설명회(대표번호 02-797-5036)</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/icon_app_gnb_customer.png" alt="gnb아이콘">
+                        <h3>고객센터</h3>
+                    </a>
+                    <ul class="depth2">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">1:1문의</a></li>
+                        <li><a href="#">미사용 모바일 상품권 재발급 요청서</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 헤더 영역 -->
+    <div class="header">
+        <button class="m_all_btn">전체메뉴</button>
+        <h1>
+            <a href="index.html">써브웨이로고</a>
+        </h1>
+        <button class="cart">
+           장바구니버튼
+        </button>
+    </div>
+    <div class="login">
+        <p>
+            안녕하세요,<br>
+            로그인하시고 다양한 혜택을 즐겨보세요.
+        </p>
+        <a href="login.html" class="go">
+            로그인하기>
+        </a>
+    </div>
+    <div class="main">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="./images/MO-main_visual01(640x495)_20250428012436321.jpg" alt="메인슬라이드01">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/MO-main_visual02(640x495)_20250428012436321.jpg" alt="메인슬라이드02">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/MO-main_visual03(640x495)_20250428012436321.jpg" alt="메인슬라이드03">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/MO-main_visual04(640x495)_20250428012436321.jpg" alt="메인슬라이드04">
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+        
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+    </div>
+    <div class="order">
+        <ul class="orderlist">
+            <li>
+                <a href="#">
+                    매장 선주문<br>
+                    <span>FAST-SUB</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    배달주문<br>
+                    <span>HOME-SUB</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 지도박스 -->
+    <!-- 배너슬라이드박스(추천메뉴) -->
+    <div class="banner">
+        <div class="tit">
+            <h2>추천 메뉴</h2>
+            <a href="#">
+                <img src="./images/right_arrow.png" alt="더보기">
+            </a>
+        </div>
+        <ul class="menu_slide">
+            <li>
+                <a href="#">
+                    <div class="imgbox">
+                        <img src="./images/Steak-&-Cheese_20211231095455613.png" alt="스테이크앤치즈">
+                    </div>
+                    <div class="info">
+                        <h3>스테이크&치즈</h3>
+                        <p>STEAK & CHEESE</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="imgbox">
+                        <img src="./images/Italian_B.M.T_20211231094910899.png" alt="이탈리안BMT">
+                    </div>
+                    <div class="info">
+                        <h3>이탈리안 비엠티</h3>
+                        <p>ITALIAN B.M.T.<sup>TM</sup></p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="imgbox">
+                        <img src="./images/Roasted-Chicken_20211231095032718.png" alt="로스트치킨">
+                    </div>
+                    <div class="info">
+                        <h3>로스트 치킨</h3>
+                        <p>ROASTED CHICKEN</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 써브카드박스 -->
+    <div class="subcard">
+        <h2>써브카드</h2>
+        <ul>
+            <li>
+                <a href="#">
+                    <div class="imgbox">
+                        <img src="./images/icon_charge.png" alt="충전">
+                        <h3>충전하기</h3>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="imgbox">
+                        <img src="./images/icon_gift.png" alt="선물">
+                        <h3>선물하기</h3>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- tabbar -->
+    <div class="tabbar">
+        <div class="tab_navi">
+            <ul class="left_icon tab_ul">
+                <li class="on">
+                    <a href="index.html">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 19H9V13H15V19H18V10L12 5.5L6 10V19ZM4 21V9L12 3L20 9V21H13V15H11V21H4Z" fill="#d3d3d3"/>
+                        </svg>
+                        <span>홈</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6H20V8H4V6ZM4 11H20V13H4V11ZM20 16H4V18H20V16Z" fill="#d3d3d3"/>
+                        </svg>
+                        <span>더보기</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="right_icon tab_ul">
+                <li>
+                    <a href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2.99999C10.1435 2.99999 8.36301 3.73749 7.05025 5.05025C5.7375 6.363 5 8.14348 5 9.99999C5 12.862 6.782 15.623 8.738 17.762C9.73814 18.8516 10.8294 19.8539 12 20.758C12.1747 20.624 12.3797 20.4607 12.615 20.268C13.5548 19.4963 14.4393 18.6595 15.262 17.764C17.218 15.623 19 12.863 19 9.99999C19 8.14348 18.2625 6.363 16.9497 5.05025C15.637 3.73749 13.8565 2.99999 12 2.99999ZM12 23.214L11.433 22.824L11.43 22.822L11.424 22.817L11.404 22.803L11.329 22.75L11.059 22.553C9.69086 21.5248 8.41988 20.3733 7.262 19.113C5.218 16.875 3 13.636 3 9.99899C3 7.61204 3.94821 5.32286 5.63604 3.63503C7.32387 1.9472 9.61305 0.998993 12 0.998993C14.3869 0.998993 16.6761 1.9472 18.364 3.63503C20.0518 5.32286 21 7.61204 21 9.99899C21 13.636 18.782 16.876 16.738 19.111C15.5804 20.3712 14.3098 21.5227 12.942 22.551C12.8281 22.6361 12.713 22.7198 12.597 22.802L12.576 22.816L12.57 22.821L12.568 22.822L12 23.214ZM12 7.99999C11.4696 7.99999 10.9609 8.21071 10.5858 8.58578C10.2107 8.96085 10 9.46956 10 9.99999C10 10.5304 10.2107 11.0391 10.5858 11.4142C10.9609 11.7893 11.4696 12 12 12C12.5304 12 13.0391 11.7893 13.4142 11.4142C13.7893 11.0391 14 10.5304 14 9.99999C14 9.46956 13.7893 8.96085 13.4142 8.58578C13.0391 8.21071 12.5304 7.99999 12 7.99999ZM8 9.99999C8 8.93913 8.42143 7.92171 9.17157 7.17157C9.92172 6.42142 10.9391 5.99999 12 5.99999C13.0609 5.99999 14.0783 6.42142 14.8284 7.17157C15.5786 7.92171 16 8.93913 16 9.99999C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 9.99999Z" fill="#d3d3d3"/>
+                        </svg>
+                        <span>매장찾기</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 12C17.5228 12 22 16.4772 22 22C22 22.5523 21.5523 23 21 23C20.4477 23 20 22.5523 20 22C20 17.5818 16.4182 14 12 14C7.58178 14 4 17.5818 4 22C4 22.5523 3.55228 23 3 23C2.44772 23 2 22.5523 2 22C2 16.4772 6.47722 12 12 12ZM12 1C14.7614 1 17 3.23858 17 6C17 8.76142 14.7614 11 12 11C9.23858 11 7 8.76142 7 6C7 3.23858 9.23858 1 12 1ZM12 3C10.3431 3 9 4.34315 9 6C9 7.65685 10.3431 9 12 9C13.6569 9 15 7.65685 15 6C15 4.34315 13.6569 3 12 3Z" fill="#d3d3d3"/>
+                        </svg>
+                        <span>MY-SUB</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <button class="btn_order">
+            <img src="./images/icon_subway.png" alt="주문버튼">
+            <span>주문하기</span>
+        </button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+main{
+    width: 100%;
+}
+main h2{
+    text-align: center;
+    padding: 50px 0 30px;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #333;
+}
+main form{
+    width: 100%;
+    padding: 20px;
+}
+main form fieldset{
+    border: none;
+    position: relative;
+    margin: auto;
+}
+main form fieldset legend{
+    position: absolute;
+    left: -99999px;
+}
+main form fieldset div{
+    width: 100%;
+}
+main form fieldset div input{
+    width: 100%;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #009223;
+    outline: none;
+}
+main form fieldset div.id input{
+    margin-bottom: 8px;
+}
+main form fieldset div.password input{
+    margin-bottom: 20px;
+}
+main form fieldset div button{
+    width: 100%;
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+main form fieldset div.loginbtn button{
+    background: #009223;
+    border-radius: 12px;
+    color: #fff;
+}
+main form fieldset >input{
+    margin: 20px 4px 40px 20px;
+
+}
+main form fieldset div.joinbtn button{
+    background: #ffc20c;
+    border-radius: 12px;
+    color: #333;
+}
+main form fieldset>a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
+}
+main form fieldset>a:hover{
+    text-decoration: underline;
+}
