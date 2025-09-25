@@ -10,12 +10,12 @@ img{border: none; display: block;}
 
 .cover{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: fixed;
     left: 0;
     top: 0;
     background: rgba(0, 0, 0, 0.8);
-    z-index: 10;
+    z-index: 104;
     display: none;
 }
 /* 팝업창 */
@@ -200,10 +200,13 @@ img{border: none; display: block;}
 .m_side_wrap .m_gnb>ul>li{
     width: 100%;
     margin-bottom: 2px;
-    background: #fff;
+}
+.m_side_wrap .m_gnb>ul>li:last-child{
+    margin-bottom: 100px;
 }
 .m_side_wrap .m_gnb>ul>li>a{
     display: block;
+    background: #fff;
     width: 100%;
     padding: 15px 20px;
     display: flex;
@@ -256,6 +259,9 @@ img{border: none; display: block;}
     font-size: 14px;
     font-weight: 500;
     line-height: 36px;
+}
+.m_side_wrap .m_gnb>ul>.last>.depth2{
+    border-radius: 0 0 40px 0;
 }
 
 /* header영역 */
@@ -318,6 +324,19 @@ img{border: none; display: block;}
     color: #009436;
     font-size: 16px;
     font-weight: 700;
+    position: relative;
+    padding-right: 10px;
+}
+.login .go::after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #009223;
+    border-right: 2px solid #009223;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: rotate(45deg) translateY(-6px);
 }
 .main{
     width: 100%;
