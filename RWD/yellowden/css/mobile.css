@@ -182,12 +182,20 @@
         height: 40px;
         text-indent: -99999px;
         background: url("../images/arrow_next.png") no-repeat center/cover;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
     }
     .sig_prev{
         width: 40px;
         height: 40px;
         text-indent: -99999px;
         background: url("../images/arrow_prev.png") no-repeat center/cover;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .dessert{
@@ -211,9 +219,13 @@
         gap: 30px;
         margin-top: 20px;
     }
-    .dessert-list .swiper-wrapper .swiper-slide{
+    .fi .swiper-wrapper {
         min-width: 180px;
         min-height: 250px;
+    }
+    .dessert-list .swiper-wrapper .swiper-slide{
+        width: 100%;
+        height: 100%;
     }
     .dessert-list .swiper-wrapper .swiper-slide a .imgbox{
         height: auto;
