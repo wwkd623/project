@@ -81,8 +81,8 @@ $(function () {
       320: {
         slidesPerView: 2.4,
         spaceBetween: 10,
-        slidesOffsetBefore: 24,
-        slidesOffsetAfter: 24,
+        slidesOffsetBefore: 20,
+        slidesOffsetAfter: 20,
         navigation: {
           enabled: false,
         },
@@ -116,8 +116,8 @@ $(function () {
       320: {
         slidesPerView: 2.4,
         spaceBetween: 10,
-        slidesOffsetBefore: 24,
-        slidesOffsetAfter: 24,
+        slidesOffsetBefore: 20,
+        slidesOffsetAfter: 20,
       },
       882: {
         slidesPerView: 3.6,
