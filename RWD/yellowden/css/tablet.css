@@ -1,0 +1,89 @@
+@media ( min-width: 1080px ) and ( max-width: 1439px ){
+    header{
+        height: 120px;
+    }
+    header::after{
+        top: 120px;
+    }
+    header.on::after{
+        height: 220px;
+    }
+    header .inner{
+        width: calc(100% - 120px);
+    }
+    header .inner h1{
+        width: 200px;
+    }
+    header .inner nav>ul.gnb>li:nth-child(3){
+        margin-right: 250px;
+    }
+    header .inner nav>ul.gnb>li>a{
+        line-height: 60px;
+        font-size: 16px;
+    }
+    header .inner nav>ul.gnb>li>ul.depth2{
+        top: 80px;
+        line-height: 40px;
+    }
+    header .inner nav>ul.gnb>li>ul.depth2>li{
+        font-size: 14px;
+    }
+
+    main{
+        margin-top: 120px;
+    }
+    .signature{
+        height: 710px;
+    }
+    .signature .inner{
+        width: calc(100% - 100px);
+    }
+    .signature .inner .tit h2::after{
+        display: none;
+    }
+    .signature .inner .tit{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .signature .inner ul.list{
+        gap: 20px;
+    }
+    .signature .inner ul.list>li>.imgbox{
+        width: 220px;
+    }
+    .signature .inner ul.list>li>.txtbox{
+        width: 320px;
+        margin-top: 120px;
+    }
+    .signature .inner ul.list>li:hover>.txtbox h3{
+        font-size: 20px;
+    }
+    .signature .inner ul.list>li>.txtbox p{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .dessert .inner{
+        width: 100%;
+    }
+    .dessert .inner .tit ul.tab_btn{
+        font-size: 20px;
+    }
+    .dessert .inner .dessert-list{
+        width: 100%;
+    }
+
+    .notice .inner{
+        width: calc(100% - 100px);
+    }
+
+    footer .inner{
+        width: calc(100% - 100px);
+    }
+    footer .inner h1{
+        width: 300px;
+    }
+    footer .inner ul.ft_con li,
+    footer .inner .ft_con2 ul.ft_nav{
+        font-size: 12px;
+    }
+}
