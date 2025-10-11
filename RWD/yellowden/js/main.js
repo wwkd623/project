@@ -79,7 +79,7 @@ $(function () {
     },
     breakpoints: {
       320: {
-        slidesPerView: 2.4,
+        slidesPerView: 2.3,
         spaceBetween: 10,
         slidesOffsetBefore: 20,
         slidesOffsetAfter: 20,
@@ -114,7 +114,7 @@ $(function () {
     spaceBetween: 20,
     breakpoints: {
       320: {
-        slidesPerView: 2.4,
+        slidesPerView: 2.3,
         spaceBetween: 10,
         slidesOffsetBefore: 20,
         slidesOffsetAfter: 20,
@@ -132,5 +132,10 @@ $(function () {
         slidesOffsetAfter: 0,
       },
     }
+  });
+
+  // 탭바 온클래스
+  $("ul.tabbar>li").click(function(){
+    $(this).addClass("on").siblings().removeClass("on");
   });
 });
