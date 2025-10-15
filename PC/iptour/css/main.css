@@ -889,6 +889,9 @@ footer .ft_con .con ul.list{
     margin-top: 5px;
     line-height: 16px;
 }
+footer .ft_con .con ul.list li a{
+    white-space: nowrap;
+}
 footer .ft_con .con ul.list li a.underline{
     text-decoration: underline;
     color: #0d25e8;
