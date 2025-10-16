@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>말줄임표&공지사항</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header>
+        <div class="logo_wrap">
+            <h1><a href="index.html">서울대학교병원</a></h1>
+            <ul class="top_menu">
+                <li><a href="#"><span>원격</span></a></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">Language</a></li>
+            </ul>
+        </div>
+        <nav>
+            <div class="inner">
+                <button type="button" class="menu_btn">전체메뉴 버튼</button>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">진료안내</a>
+                    </li>
+                    <li>
+                        <a href="#">이용안내</a>
+                    </li>
+                    <li>
+                        <a href="#">건간정보</a>
+                    </li>
+                    <li>
+                        <a href="#">고객참여</a>
+                    </li>
+                    <li>
+                        <a href="#">병원소개</a>
+                    </li>
+                </ul>
+                <button type="button" class="search_btn">검색 버튼</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="swiper slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide1"><a href="#">Slide 1</a></div>
+                <div class="swiper-slide slide2"><a href="#">Slide 2</a></div>
+                <div class="swiper-slide slide3"><a href="#">Slide 3</a></div>
+            </div>
+            <div class="swiper-control">
+                <div class="swiper-pagination"></div>
+                <div class="play-controls">
+                    <button class="btn_pause">일시정지</button>
+                    <button class="btn_play">재생</button>
+                </div>
+            </div>
+        </div>
+
+        <ul class="card_wrap">
+            <li>
+                <h2>진료예약</h2>
+                <p>빠르고 쉽게 진료예약을<br>하실 수 있습니다.</p>
+                <div class="btn_wrap">
+                    <a href="#">진료예약</a>
+                    <a href="#">첫예약상담</a>
+                </div>
+            </li>
+            <li>
+                <h2>진료과/센터</h2>
+                <p>병원의 진료과 / 센터를<br>상세히 확인할 수 있습니다.</p>
+                <div class="btn_wrap2">
+                    <a href="#">본원</a>
+                    <a href="#">어린이병원</a>
+                    <a href="#">암병원</a>
+                </div>
+            </li>
+            <li>
+                <h2>진료안내</h2>
+                <p>대표전화<span>1588-5700</span></p>
+                <div class="btn_wrap">
+                    <a href="#">외래진료안내</a>
+                    <a href="#">진료시간표</a>
+                </div>
+            </li>
+            <li class="loginbox">
+                <ul class="login_tab">
+                    <li class="on"><a href="#">로그인</a></li>
+                    <li><a href="#">비회원로그인</a></li>
+                </ul>
+
+                <a href="#" class="login_btn">로그인</a>
+                <a href="#" class="join_btn">회원가입</a>
+
+                <div class="btn_wrap">
+                    <a href="#">아이디 찾기</a>
+                    <a href="#">비밀번호 찾기</a>
+                </div>
+            </li>
+        </ul>
+
+        <div class="section">
+            <div class="inner">
+                <div class="left">
+                    <h3>의료진 찾기</h3>
+                    <p>
+                        서울대학교병원의 의료진은<br>
+                        환자를 위해 항상 노력하고 있습니다.
+                    </p>
+                    <form action="">
+                        <fieldset>
+                            <legend>검색폼</legend>
+                            <input type="text" placeholder="의료진/질병명 검색하기">
+                            <button>검색</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="right">
+                    <div class="wrap">
+                        <ul class="menu">
+                            <li class="on"><a href="#">병원소식</a></li>
+                            <li><a href="#">채용</a></li>
+                            <li><a href="#">강좌</a></li>
+                            <li><a href="#">입찰</a></li>
+                            <li><a href="#">언론보도</a></li>
+                        </ul>
+                        <a href="#" class="more">더보기</a>
+                    </div>
+                    <!-- 공지사항 -->
+                    <ul class="list">
+                        <li><a href="#">집에서 찍은 1분 영상, AI가 자폐 위험 조기 선별한다</a><span>2025-10-14</span></li>
+                        <li><a href="#">서울대병원, ‘2025 건강 콘서트’개최</a><span>2025-10-10</span></li>
+                        <li><a href="#">역사와 함께하는 국민 건강 콘서트(14일(화) 11시~13시15분)</a><span>2025-10-10</span></li>
+                        <li><a href="#">서울대병원 발전후원회, 창립 20주년...미래 의료 비전 제시</a><span>2025-10-02</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section2">
+            <div class="news_slider">
+                <h2>알림판</h2>
+                <div class="news_right">
+                    <div class="swiper-button-prev btn_prev"></div>
+                    <button class="btn_pause playbox">일시정지</button>
+                    <button class="btn_play playbox">재생</button>
+                    <div class="swiper-button-next btn_next"></div>
+                </div>
+                <div class="swiper news stop">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="imgbox"><img src="./images/73f42b5506084b319d7452fd2cbe009d.jpg" alt="쉬운로그인"></div>
+                                <div class="txtbox">
+                                    <h3>쉬운 로그인을 활용해보세요</h3>
+                                    <p>로그인 시 네이버/카카오 아이디 연동 방법 및 신규 가입 시 SNS간편 회원가입에 관해 안내드립니다. ...</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="imgbox"><img src="./images/2570a7c29e514716a4614bec01c79216.jpg" alt="예약일"></div>
+                                <div class="txtbox">
+                                    <h3>예약은 약속입니다</h3>
+                                    <p>예약일 내원이 어려우신 분은 부디 변경 또는 취소해주세요. 전화 한 통,클릭 한 번이 다른 환자에게 큰 ...</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="imgbox"><img src="./images/12c956107fee4077b8e432d10e933717.jpg" alt="주차장운영중단안내"></div>
+                                <div class="txtbox">
+                                    <h3>본관 1주차장 운영중단 및 공사 안내</h3>
+                                    <p>공사 기간 : 2024.07.11(목) ~ 2026.08.19(수) 안전하고 쾌적한 주차 환경 조성 ...</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="imgbox"><img src="./images/99c432f9a03147ee81417b5076e34a43.png" alt="진료비하이패스"></div>
+                                <div class="txtbox">
+                                    <h3>진료비 하이패스 서비스란?</h3>
+                                    <p>환자의 신용카드를 병원에 등록하여, 수납창구 방문 없이 진찰 및 검사 후 일괄 결제하는 빠르고 편리한 진료비 ...</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <ul class="card_wrap3">
+                <li>
+                    <h2>위임장 / 동의서 / 증명서</h2>
+                    <p>위임장, 동의서 다운로드<br>및 증명서를 발급받으실 수<br>있습니다.</p>
+                    <div class="btn_wrap">
+                        <a href="#">위임장/동의서</a>
+                        <a href="#">증명서발급</a>
+                    </div>
+                </li>
+                <li>
+                    <h2>고객의 소리</h2>
+                    <p>병원을 이용하시면서<br>감사 또는 건의하고자 하는<br>사항을 등록하실 수 있습니다.</p>
+                    <div class="btn_wrap">
+                        <a href="#">감사합니다</a>
+                        <a href="#">건의합니다</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section3">
+            <div class="inner">
+                <div class="tit">
+                    <h2>건강정보</h2>
+                    <p>질병, 영양, 운동, 생활 속 관리 등 건강에 대한 모든 것</p>
+                </div>
+                <ul class="health_list">
+                    <li>
+                        <a href="#">
+                            <h3>건강 TV</h3>
+                            <p>서울대학교병원 의료진에게<br>듣는 팟캐스트 '건강톡톡'</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>우리 집 주치의</h3>
+                            <p>하나의 질병에 대해서<br>깊이 있게 알아봅니다.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>공개강좌</h3>
+                            <p>누구에게나 열려있는<br>공개 건강강좌</p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3>건강채널</h3>
+                        <p>더 편하게 만나는 건강정보</p>
+                        <ul class="btn_wrap">
+                            <li><a href="#">페이스북</a></li>
+                            <li><a href="#">포스트</a></li>
+                            <li><a href="#">네이버 TV</a></li>
+                            <li><a href="#">블로그</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section4">
+            <ul class="card_wrap4">
+                <li>
+                    <h2>공공부문</h2>
+                    <p>위임장, 동의서 다운로드<br>및 증명서를 발급받으실 수<br>있습니다.</p>
+                    <div class="btn_wrap">
+                        <a href="#">공공부문</a>
+                    </div>
+                </li>
+                <li>
+                    <h2>건강증진센터</h2>
+                    <p>질병 예방 및 삶의 질 향상을<br>위해 노력합니다.</p>
+                    <div class="btn_wrap">
+                        <a href="#">본원</a>
+                        <a href="#">강남센터</a>
+                    </div>
+                </li>
+                <li>
+                    <h2>발전후원회</h2>
+                    <p>따뜻한 마음을 의료 발전으로<br>보답 하겠습니다.</p>
+                    <div class="btn_wrap">
+                        <a href="#">발전후원회</a>
+                        <a href="#">어린이병원후원</a>
+                    </div>
+                </li>
+                <li>
+                    <h2>진료협력센터</h2>
+                    <p>네트워크로 하나되는 의료<br>SNUH 진료협력시스템</p>
+                    <div class="btn_wrap">
+                        <a href="#">진료의뢰</a>
+                        <a href="#">협력병원</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section3">
+            <div class="inner">
+                <div class="tit">
+                    <h2>오시는길</h2>
+                    <p>서울대학교병원으로 오시는 길을 알려드립니다.</p>
+                </div>
+                <ul class="pin_list">
+                    <li><a href="#">오시는길</a></li>
+                    <li><a href="#">원내위치도</a></li>
+                    <li><a href="#">진료과/검사실</a></li>
+                    <li><a href="#">주변편의시설</a></li>
+                </ul>
+
+                <div id="map"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=26de5505718ac02877a3c4d07e11dc6d"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        var mapContainer = document.getElementById("map");
+            mapOption = {
+                center: new kakao.maps.LatLng(37.5795427, 126.9990602),
+                level: 3,
+                mapTypeId : kakao.maps.MapTypeId.ROADMAP
+            };
+
+            var map = new kakao.maps.Map(mapContainer, mapOption);
+    </script>
+</body>
+</html>
