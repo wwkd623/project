@@ -1,14 +1,17 @@
 $(function(){
-  $(document).click(function(e){
-    e.preventDefault();
-  });
-
   $(window).on("scroll", function () {
     if ($(this).scrollTop() > 60) {
       $(".logo_wrap").slideUp(100);
     } else {
       $(".logo_wrap").slideDown(100);
     }
+  });
+
+  $("main, footer").click(function(e){
+    e.preventDefault();
+  });
+  $("main .loginbox a, input").click(function(e){
+    e.stopPropagation();
   });
 
   let $prevDepth = null;
@@ -49,11 +52,11 @@ $(function(){
     $(".gnb>li").on("mouseenter", function () {
       const left = $(this).position().left;
       const width = $(this).outerWidth();
-      $line.css({ left, width, opacity: 1 });
+      $line.css({ left, width, opacity: 1, display: "block" });
     });
 
     $("header").on("mouseleave", function () {
-      $line.css({ opacity: 0 });
+      $line.css({ opacity: 0, display: "none" });
     });
   });
 
@@ -131,5 +134,9 @@ $(function(){
     $("button.close").hide();
     $("ul.family>li").show();
     $(".family_list").removeClass("on");
+  });
+
+  $(".check label input").click(function(){
+    $(".check label").toggleClass("checked");
   });
 });
