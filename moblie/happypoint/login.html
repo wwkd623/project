@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해피포인트 로그인</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="fixed_chat">
+        <button class="close">X</button>
+        <a href="#">
+            <img src="./images/happybot.png" alt="챗봇">
+        </a>
+    </div>
+
+    <div class="side_bar">
+        <div class="top">
+            <ul class="login_wrap">
+                <li class="home_btn"><a href="index.html">홈</a></li>
+                <li><a href="#">로그인해주세요</a></li>
+            </ul>
+            <button class="side_close">닫기</button>
+        </div>
+
+        <ul class="quick">
+            <li><a href="#">신규 카드 등록</a></li>
+            <li><a href="#">카드 비밀번호 설정</a></li>
+            <li><a href="#">카드 재발급 신청</a></li>
+            <li><a href="#">회원정보</a></li>
+        </ul>
+
+        <div class="happypoint hp">
+            <h2>해피포인트</h2>
+            <ul class="list">
+                <li><a href="#">해피포인트란?</a></li>
+                <li><a href="#">해피포인트 멤버십</a></li>
+                <li><a href="#">해피포인트 앱소개</a></li>
+                <li><a href="#">해피포인트 카드</a></li>
+            </ul>
+        </div>
+
+        <div class="benefit hp">
+            <h2>혜택</h2>
+            <ul class="list">
+                <li><a href="#">SPC 브랜드</a></li>
+            </ul>
+        </div>
+
+        <div class="cs_center hp">
+            <h2>고객센터</h2>
+            <ul class="list">
+                <li><a href="#">Q&A</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">이용약관</a></li>
+            </ul>
+        </div>
+
+        <div class="chatbot hp">
+            <h2>채팅상담</h2>
+            <ul class="list">
+                <li><a href="#">해피포인트 상담</a></li>
+                <li><a href="#">해피마켓 상담</a></li>
+                <li><a href="#">해피오더 상담</a></li>
+            </ul>
+        </div>
+
+        <ul class="sns">
+            <li><a href="#"><img src="./images/icon-sns-insta.png" alt="인스타"></a></li>
+            <li><a href="#"><img src="./images/icon-sns-blog.png" alt="블로그"></a></li>
+            <li><a href="#"><img src="./images/icon-sns-youtube.png" alt="유튜브"></a></li>
+        </ul>
+    </div>
+    <div class="overlay"></div>
+
+    <header>
+        <button class="prev_btn"><img src="./images/prev.png" alt="이전페이지버튼"></button>
+        <h2>로그인</h2>
+        <button class="menu_btn"><img src="./images/menu.png" alt="메뉴버튼"></button>
+    </header>
+
+    <main>
+        <div class="login_form">
+            <form action="">
+                <fieldset>
+                    <legend class="blind">로그인폼</legend>
+                    <div class="idps">
+                        <label><input type="text" placeholder="아이디"></label>
+                        <label><input type="password" placeholder="비밀번호"></label>
+                    </div>
+                    <div class="check_wrap">
+                        <div class="check">
+                            <label><input type="checkbox"></label>
+                            <p>아이디 저장</p>
+                        </div>
+                        <ul class="find">
+                            <li><a href="#">아이디 찾기</a></li>
+                            <li><a href="#">비밀번호 찾기</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="human_check">
+                        <label><input type="checkbox"></label>
+                        <p>사람인지 확인하십시오</p>
+                        <ul class="paper">
+                            <li><a href="#">개인 정보</a></li>
+                            <li><a href="#">약관</a></li>
+                        </ul>
+                    </div>
+
+                    <button class="login_btn">로그인</button>
+                    <p class="join">해피포인트가 처음이신가요? <a href="#">회원가입</a></p>
+
+                    <div class="easy_btn">
+                        <a href="#"><img src="./images/new-simple-login_250707.png" alt="휴대폰간편로그인"></a>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <ul class="ft_nav">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">고객센터</a></li>
+            <li><a href="#">PC버전</a></li>
+            <li><a href="#">이용약관</a></li>
+        </ul>
+
+        <div class="cor">
+            <button>(주) 섹타나인</button>
+            <div class="chat"><a href="#">해피포인트 챗봇 상담하기</a></div>
+        </div>
+
+        <ul class="sns">
+            <li><a href="#"><img src="./images/icon-sns-insta.png" alt="인스타"></a></li>
+            <li><a href="#"><img src="./images/icon-sns-blog.png" alt="블로그"></a></li>
+            <li><a href="#"><img src="./images/icon-sns-youtube.png" alt="유튜브"></a></li>
+        </ul>
+
+        <p>Copyright &copy; by SPC ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

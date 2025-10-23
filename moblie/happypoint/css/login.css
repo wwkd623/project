@@ -1,0 +1,168 @@
+header{
+    width: 100%;
+    height: 68px;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+header h1 a{
+    display: block;
+    width: 100%;
+}
+header h1 a img{
+    width: 100%;
+}
+header button{
+    width: 40px;
+}
+
+main{
+    width: 100%;
+}
+
+.login_form{
+    padding: 180px 24px 40px;
+    position: relative;
+}
+.login_form::before{
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60px;
+    background: url("../images/logo-happypoint.svg") no-repeat;
+}
+
+form fieldset{
+    border: none;
+}
+.idps label input{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-indent: 15px;
+    outline: none;
+}
+
+.check_wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.check_wrap>.check{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #555;
+}
+.check_wrap>.check>label{
+    width: 20px;
+    height: 20px;
+    background: url("../images/uniform1.png") no-repeat center/cover;
+}
+.check_wrap>.check>label.checked{
+    background: url("../images/uniform2.png") no-repeat center/cover;
+}
+.check_wrap>.check>label>input{
+    opacity: 0;
+}
+
+.check_wrap ul.find{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    color: #f86f1d;
+}
+.check_wrap ul.find li{
+    position: relative;
+}
+.check_wrap ul.find li:first-child::after{
+    content: "";
+    width: 1px;
+    height: 12px;
+    background: #e7e7e7;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.human_check{
+    width: 290px;
+    height: 60px;
+    margin: 0 auto 40px;
+    background: #fafafa url("../images/cloudflare_logo.svg.png") no-repeat 204px 8px;
+    background-size: 70px 28px;
+    border: 1px solid #e2e2e2;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.human_check label input{
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+}
+.human_check p{
+    font-size: 13px;
+}
+
+.human_check ul.paper{
+    position: absolute;
+    right: 16px;
+    bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+.human_check ul.paper li{
+    position: relative;
+}
+.human_check ul.paper li:first-child::after{
+    content: "";
+    width: 2px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    right: -5px;
+    bottom: 5px;
+}
+.human_check ul.paper li a{
+    font-size: 9px;
+    text-decoration: underline;
+}
+
+button.login_btn{
+    width: 100%;
+    height: 58px;
+    background: #0d1071;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+p.join{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 78px;
+}
+p.join a{
+    color: #f86f1d;
+}
