@@ -173,15 +173,16 @@ button{background: none; border: none; cursor: pointer;}
     width: 100%;
     padding: 24px;
     display: flex;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
     flex-wrap: wrap;
     border-bottom: 3px solid #f4f4f4;
 }
 .side_bar .hp ul.list li{
-    width: 140px;
+    width: 120px;
     font-size: 16px;
     font-weight: 450;
+    white-space: nowrap;
 }
 .side_bar .hp ul.list li a{
     display: block;
