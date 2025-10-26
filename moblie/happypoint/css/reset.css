@@ -159,6 +159,7 @@ button{background: none; border: none; cursor: pointer;}
 
 .side_bar .hp{
     width: 100%;
+    overflow-y: scroll;
 }
 
 .side_bar .hp h2{
@@ -210,6 +211,7 @@ footer ul.ft_nav li{
     font-size: 14px;
     color: #666;
     position: relative;
+    white-space: nowrap;
 }
 footer ul.ft_nav li::after{
     content: "";
